@@ -13,8 +13,8 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-Route::get('inicio',[LoginController::class,'inicio'])->name('inicio');
 
 Route::prefix('comercial')->group(function () {
-  route::get('prospectos',[ProspectosController::class,'prospectos'])->name('prospectos');
+  Route::get('inicio',[LoginController::class,'inicio'])->name('inicio');
+  route::get('prospectos',[ProspectosController::class,'prospectos'])->name('prospectos');  
 });

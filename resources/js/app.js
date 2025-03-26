@@ -13,3 +13,6 @@ import './bootstrap';
  */
 
 import './components/Example';
+
+import Turbolinks from "turbolinks";
+Turbolinks.start();
